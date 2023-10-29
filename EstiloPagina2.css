@@ -1,0 +1,311 @@
+body {
+  background-image: url(imegenes/fondo-azul-degradado_23-2149347096.avif); /*Para buscar imagenes*/
+
+  background-repeat: no-repeat; /*Para que el fondo no se repita*/
+
+  background-size: cover; /* Esto es para que el fondo se ajuste*/
+
+  color: rgb(255, 255, 255); /*Para el color de Letra*/
+
+  background-attachment: fixed; /* Esto es para fijar el fondo de pantalla*/
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 120px;
+}
+
+
+/*Barra de busqueda*/
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(108, 112, 94);
+  border-bottom-style: ridge;
+  border-color: black;
+}
+
+nav{
+  /*float: right; /*La barra va a estar hacia la derecha*/
+  margin-left: 5px;
+  display: flex;
+  justify-content:space-between;
+}
+
+nav ul{
+  list-style: none;
+  overflow: hidden; /*La barra siempre la ves y el contenido se va ocultando*/
+  
+}
+
+
+nav ul li{
+  float: right;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 15px;
+  margin-right: 5px;
+
+}
+
+nav ul li a{
+  display: block;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li:hover{
+  background-color: blue;
+}
+
+.BarraDeBusqueda{
+  border-bottom: 15px;
+  margin: auto;
+
+}
+
+.botonBusqueda{
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.BarradeBuscar{
+  padding: 10px;
+  width: 500px;
+
+}
+/*------------------------------------------------*/
+
+
+.InformacionDePagina{
+  max-width: 1300px;
+  margin: auto;
+}
+.TituloPrincipal{
+  background-color: rgb(45, 45, 250);
+  max-width: 300px;
+  margin: auto;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-style: solid;
+}
+
+
+.ContenedorDeQuejas{
+
+  background-color: rebeccapurple;
+    display: grid; /*Esto es para crear ceparaciones en un bloque*/
+    padding: 5px;
+    border-radius: 10px;
+
+    grid-template-columns: 420px 420px 420px ; /*Separaciones en Vertical*/
+
+    column-gap: 10px; /*Espacios entre filas en Vertical*/
+
+    grid-template-rows: auto; /*Separaciones en Horizontal*/
+
+    row-gap: 10px; /*Espacios entre columnas en Horizontal*/    
+
+    justify-items: stretch; /*Esto es para indicar o ordenar todas las ceparaciones de una grilla*/
+    
+    /*justify-self: start; /* Esto lo que hace es acomodar el contenido Horizontalmente en la grilla */
+
+    /*align-self: center; /* Esto lo que hace es acomodar el contenido Verticalmente en la grilla */
+
+    /*-----------------------------------------------------------------------------------------*/
+
+    /*Para hubicar un contenido en una grilla Horizontal usas esto: " ( grid-column: 3/3; ) "
+    Para las columnas el segundo numero tendras que indicarlo segun la cantidad de columnas que halla
+    Y el primer numero indica cual de esas columnas vas a usar */
+
+    /* Para hubiar el contendio en una grilla en Vertical usas esto: " ( grid-row: 3/3;  ) "
+    La segunda letra indica la cantidad de Filas que halla(los tenes que poner vos)
+    Y la primera indica que fila vas usar*/    
+
+    /*-------------------------------------------------------------------------------------------*/
+}
+
+
+
+
+.grilla{
+  border-style: groove;
+  border-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 0px 29px 0px 20px;
+  background: linear-gradient(to top left, rgb(255, 73, 73) ,rgb(239, 255, 96));
+  color: black;
+  transition: transform 200ms ease-out;
+}
+
+.grilla:hover{
+  transform: scale(1.2);
+}
+
+h1{
+  text-align: center;
+}
+
+.LisG{
+  background-color: rgba(102, 51, 153, 0.8);
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+  text-align: start;
+  margin: auto;
+}
+
+
+
+/*grid-column-stard: ; /grid-column-end: ;
+
+Para darle mas forma y utilidad a esto de las gillas / separaciones existe este termino:
+"grid-column-start: ;" y "grid-column-end: ;" que pordes indicar que una division empieze en
+X columna por ejemplo: 
+
+tengo 5 columnas:
+
+|  1 |  2  | 3  |  4  |  5 |
+
+puedo indicar que un division o una clase empieze desde cualquier punto, osea :
+
+
+.Texto/Clase{
+grid-column-stard: 2 ;
+grid-column-end: 4;
+}
+
+Esto haria que la clasee Texto/Clase empieze ocupando la 2 hasta las 4, asi:
+
+|  1  | ( 2    3    4 ) |  5  |.*/
+
+.PracticaGrilla{
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  gap: 10px;
+  grid-template-rows: 300px 300px 300px 300px ;
+  justify-content: center;   
+}
+
+
+.Pracitca{
+  border-style: solid;
+}
+
+.GriUno{
+  text-align: center;
+  padding: 1% 1% 1% 1% 1%;
+  background-color: brown;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.ImagenDeTuMama{
+  width: 400px;
+  height: 300px;
+
+}
+
+
+
+
+.caca{
+  width: 100px;
+  height: 50px;
+  background-color: rgb(84, 84, 255);
+  border-radius: 15px;
+  transition: transform 700ms ease ; /*ESTO ES PARA DARLE TIEMPO A LAS ANIMACIONES.*/
+  
+  
+}
+
+/*PARA ANIMACION CUANDO PONES EL MOUSE ENCIMA*/
+.caca:hover{  
+  /*SI LLAMAS A UNA CLASE Y DESP AGREGAS ":hover" ESTO SIGNIFICA QUE CUANDO 
+  PASAS EL MAUSE SOBRE EL CAMBIA SENGUN LO QUE QUIERAS*/
+  transform: scale(2);
+  background-color: rgb(0, 255, 98);
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.425);
+  
+  
+  
+}
+
+
+/*ANIMACIONES PERSONALIZADAS*/
+
+.GriTres{ /*Uso esta grilla de ejemplo*/
+  text-align: center;
+  background-color: rgb(79, 42, 165);
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.caca2{
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  margin: auto;
+  transition: transform 700ms ease ;
+  
+}
+
+.caca2:hover{
+  transform: scale(2);
+  animation: /*Indicas el Nombre*/seMueveTodo /*Indicas los seg en ejecutarce*/1s; /**/
+}
+
+.Titulocaca2{
+  animation: movemeEsta 0.5s infinite alternate;
+}
+
+
+@keyframes seMueveTodo{
+  25%{background-color: black;}
+
+  50%{background-color: chocolate;  }
+
+  75% { background-color: blueviolet;}
+
+}
+
+@keyframes movemeEsta {
+  from{ transform: scale(1.5);  }
+  to{ transform: scale(1);}
+  
+}
+
+
+
+/*Para adaptarnos a una pantalla o cambiar como se ve la pagina segun que dispositivo
+usomos para ingresas se utiliza el "@media(max-width:768)" o "@media(min-width:768)"*/
+
+@media(max-width:768px){
+  body{
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .ContenedorDeQuejas{
+  
+    color: black;
+      display: grid; /*Esto es para crear ceparaciones en un bloque*/
+  
+      grid-template-columns: auto ; /*Separaciones en Vertical*/
+  
+      column-gap: 10px; /*Espacios entre filas en Vertical*/ /* Si utilizamos solo gap separa de los 2 lados*/
+  
+      grid-template-rows: auto; /*Separaciones en Horizontal*/
+  
+      row-gap: 10px; /*Espacios entre columnas en Horizontal*/    
+  
+      justify-items: stretch; 
+    }
+}

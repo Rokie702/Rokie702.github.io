@@ -1,0 +1,202 @@
+body{
+    background-image: url(imegenes/fondo-azul-degradado_23-2149347096.avif); /*Para buscar imagenes*/
+
+    background-repeat: no-repeat; /*Para que el fondo no se repita*/
+
+    background-size: cover; /* Esto es para que el fondo se ajuste*/
+
+    color: azure; /*Para el color de Letra*/
+
+    background-attachment: fixed; /* Esto es para fijar el fondo de pantalla*/
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*El font fmaily es para el estilod de la letra, podes buscar por google o usar las que te ofrese el sistema*/
+    margin-top: 120px;
+}
+
+
+/*La Barra fija de la parte superior*/
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(108, 112, 94);
+    border-bottom-style: ridge;
+    border-color: black;
+
+}
+
+nav{
+    /*float: right; /*La barra va a estar hacia la derecha*/
+    display: flex;
+    justify-content:space-between;
+    margin-left: 10px;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden; /*La barra siempre la ves y el contenido se va ocultando*/
+}
+
+
+nav ul li{
+    float: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: blue;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+
+/*INFORMACION PRINCIPAL DE LA PAGINA*/
+
+.InformacionDePagina{
+    max-width: 1300px; /* Esto es para ponerle limite a la pagina.*/
+
+    margin: auto; /* Esto es para el Margen*/
+
+
+}
+
+.Titulo{
+    background-color: rgb(126, 7, 238, 0.6);
+    text-align: center; /*Esto es para centrar el texto*/
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.5% 3% 0.5% 3%; /*El padding es para separa a X distancia */
+
+    border-radius: 15px; /*Esto es para el borde de un bloque,
+    el bloque es lo que separa las cendas de la pagina.*/
+}
+
+h2{
+    text-align: center;
+}
+
+.BotonMercado{
+    border-radius: 100px;
+    padding: 10px;
+    background-color: rgb(217, 255, 0);
+    color: rgb(0, 0, 116);
+}
+
+
+/*ANIMACION AL PONER MAS*/
+.BotonMercado:hover{
+    box-shadow: 0 5px 7px 0px rgba(0, 0, 0, 0.603);
+    /*De estos solo se puede usar 1 solo*/
+
+    transform: scale(1.5); /*PARA MODIFICAR LA ESCALA*/
+    transform: rotate(25deg); /*PARA MODIFICAR EL ANGULO  se mide en "deg"*/
+    transform: translate(1px, 100px); /*El EJE "Y" ESTA INVERTIDO*/
+    
+    
+}
+
+/*----------------------------------------------------------*/
+
+
+/*MOTOR MONOFASICO*/
+
+.InfoMotorMonofasico{
+    background: linear-gradient(to left top,rgb(116, 0, 0), rgba(156, 102, 0, 0.507)); 
+    /* Esto es para un degradado*/
+
+    text-align: center;
+}
+
+
+.QueEsMejorMono{
+    display: flex;
+    justify-content: center; /*Esto es para acomodar los items horizontalmente*/
+
+}
+
+.MotorMonofasico{
+    height: auto; /*El Largo*/
+    width: 400px; /*ESto es el Ancho*/
+    margin: 20px; /*Distancia de los bordes hacia adentro*/
+    padding: 0px 50px 20px 50px;
+    border-radius: 15px;
+    border-style: double;
+    border-color: black;
+}
+
+.VentajasMono{
+    background-color: rgba(0, 255, 13, 0.7);
+}
+
+.DesventajasMono{
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/*-----------------------------------------------------------------------*/
+
+
+/*MOTOR TRIFASICO*/
+
+.InfoMotorTrifasico{
+    background-color: rgba(0, 183, 255, 0.6);
+    text-align: center;
+    text-shadow: none;
+}
+
+
+.QueEsMejorTri{
+    display: flex;
+    justify-content: center;
+}
+
+.MotorTrifasico{
+    height: auto; /*El Largo*/
+    width: 400px; /*ESto es el Ancho*/
+    margin: 20px; /*Distancia de los bordes hacia adentro*/
+    padding: 0px 50px 20px 50px;
+    border-radius: 15px;
+    border-style: double;
+    border-color: black;
+}
+
+.VentajasTri{
+    background-color: rgba(0, 255, 13, 0.7);
+}
+
+.DesventajasTri{
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/*---------------------------------------------------------------------*/
+
+@media (max-width: 768px){
+    body{
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .InformacionDePagina{
+        padding-top: 100px;
+    }
+
+    .BarraDeBusqueda{
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,54 @@
+body{
+    font-family: fantasy;
+    background-image: url(imegenes/fondo-azul-degradado_23-2149347096.avif); /*Para buscar imagenes*/
+
+    background-repeat: no-repeat; /*Para que el fondo no se repita*/
+
+    background-size: cover; /* Esto es para que el fondo se ajuste*/
+
+    background-attachment: fixed;
+
+}
+
+
+/*Barra de busqueda*/
+
+.nuevocolor{
+    background-color: rgb(108, 112, 94);
+    color: white;
+}
+/*----------------------------------------------*/
+
+header{
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+.ContenedorDePAgina{
+    padding-top: 10px;
+    color: aliceblue;
+}
+
+.castlebaña{
+    background-image: url(imegenes/1200px-Fire.jpg);
+    background-attachment: fixed;
+
+}
+
+.bloqueDeImagenes{
+    width: 800px;
+    height: 500px;
+    margin: auto;
+}
+
+.row{
+    padding: 20px;
+    
+}
+
+.col{
+    margin: 10px;
+
+}
